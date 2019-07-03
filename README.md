@@ -35,3 +35,6 @@ webpack 只能处理 JS 模块，如果要处理其他类型的文件，就需�
 
 每个 loader 都是无状态的，确保 loader 在不同模块转换之间不保存状态
 
+![https://github.com/zymfe/webpack-loader-dev/blob/master/loader-order-normal.jpg](https://github.com/zymfe/webpack-loader-dev/blob/master/loader-order-normal.jpg)
+
+![https://github.com/zymfe/webpack-loader-dev/blob/master/loader-order-pitch](https://github.com/zymfe/webpack-loader-dev/blob/master/loader-order-pitch)
