@@ -1,0 +1,24 @@
+{
+  "name": "webpack-loader-dev",
+  "version": "1.0.0",
+  "description": "开发 webpack loader？",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zymfe/webpack-loader-dev.git"
+  },
+  "author": "zymfe@foxmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zymfe/webpack-loader-dev/issues"
+  },
+  "homepage": "https://github.com/zymfe/webpack-loader-dev#readme"
+}
