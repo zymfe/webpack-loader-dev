@@ -15,7 +15,7 @@ webpack 只能处理 JS 模块，如果要处理其他类型的文件，就需�
 
 ### 符号的定义：
 
-~! 禁用 pre loader 和 normal loader
+-! 禁用 pre loader 和 normal loader
 
 ! 禁用 normal loader
 
