@@ -1,4 +1,5 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const date = new Date();
 
 module.exports = {
@@ -12,9 +13,16 @@ module.exports = {
   resolveLoader: {
     modules: ['node_modules', path.resolve(__dirname, 'loaders')]
   },
-  watch: true,
+  // watch: true,
+  plugins: [
+    new CleanWebpackPlugin()
+  ],
   module: {
     rules: [
+      {
+        test: /\.jpg$/,
+        use: 'file-loader'
+      },
       {
         test: /\.js$/,
         use: [

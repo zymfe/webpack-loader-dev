@@ -10,3 +10,8 @@ class Person {
 }
 
 const p = new Person('zhaoyiming');
+
+import imgPath from './logo.jpg';
+const imgEle = document.createElement('img');
+imgEle.src = imgPath;
+document.body.appendChild(imgEle);
