@@ -11,7 +11,7 @@ class Person {
 
 const p = new Person('zhaoyiming');
 
-import imgPath from './logo.jpg';
+import imgPath from './async.png';
 const imgEle = document.createElement('img');
 imgEle.src = imgPath;
 document.body.appendChild(imgEle);

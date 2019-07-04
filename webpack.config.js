@@ -20,8 +20,19 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jpg$/,
+        test: /\.(jpg|jpeg|gif)$/,
         use: 'file-loader'
+      },
+      {
+        test: /\.png$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 1024 * 100
+            }
+          }
+        ]
       },
       {
         test: /\.js$/,

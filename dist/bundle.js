@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/logo.jpg":
-/*!**********************!*\
-  !*** ./src/logo.jpg ***!
-  \**********************/
+/***/ "./src/async.png":
+/*!***********************!*\
+  !*** ./src/async.png ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "621567c24ad254ae7c132febf58c90d3.jpg"
+module.exports = "7ac3307b6b1efa60884062a3e5b43a36.png"
 
 /***/ }),
 
@@ -107,7 +107,7 @@ module.exports = "621567c24ad254ae7c132febf58c90d3.jpg"
 "use strict";
 
 
-var _logo = _interopRequireDefault(__webpack_require__(/*! ./logo.jpg */ "./src/logo.jpg"));
+var _async = _interopRequireDefault(__webpack_require__(/*! ./async.png */ "./src/async.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -139,7 +139,7 @@ function () {
 
 var p = new Person('zhaoyiming');
 var imgEle = document.createElement('img');
-imgEle.src = _logo["default"];
+imgEle.src = _async["default"];
 document.body.appendChild(imgEle);
 
 /***/ })
