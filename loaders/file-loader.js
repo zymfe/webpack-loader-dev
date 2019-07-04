@@ -3,8 +3,10 @@
 const loaderUtils = require('loader-utils');
 
 function fileLoader (source) {
+
   const fileName = loaderUtils.interpolateName(this, '[hash].[ext]', {content: source});
   this.emitFile(fileName, source);
+  
   return `module.exports = "${fileName}"`;
 }
 
