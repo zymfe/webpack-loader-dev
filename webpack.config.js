@@ -15,12 +15,12 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: ['test-loader-1', 'test-loader-2'],
+        use: ['test-loader-1'],
         enforce: 'pre'
       },
       {
         test: /\.js$/,
-        use: ['test-loader-4']
+        use: ['test-loader-2']
       },
       {
         test: /\.js$/,

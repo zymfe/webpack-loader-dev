@@ -86,36 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./loaders/test-loader-inline.js!./test/1.js":
-/*!***************************************************!*\
-  !*** ./loaders/test-loader-inline.js!./test/1.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = 1;\n\n//# sourceURL=webpack:///./test/1.js?./loaders/test-loader-inline.js");
-
-/***/ }),
-
-/***/ "./loaders/test-loader-inline.js!./test/2.js":
-/*!***************************************************!*\
-  !*** ./loaders/test-loader-inline.js!./test/2.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = 2;\n\n//# sourceURL=webpack:///./test/2.js?./loaders/test-loader-inline.js");
-
-/***/ }),
-
 /***/ "./test/main.js":
 /*!**********************!*\
   !*** ./test/main.js ***!
   \**********************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("const num1 = __webpack_require__(/*! test-loader-inline!./1.js */ \"./loaders/test-loader-inline.js!./test/1.js\");\r\n\r\n// -! 禁用 pre loader 和 normal loader\r\nconst num2 = __webpack_require__(/*! -!test-loader-inline!./2.js */ \"./loaders/test-loader-inline.js!./test/2.js\");\r\n\r\n// ! 禁用 normal loader\r\n// const num2 = require('!test-loader-inline!./2.js');\r\n\r\n// !! 禁用 pre loader、post loader、normal loader\r\n// const num2 = require('!!test-loader-inline!./2.js');\r\n\n\n//# sourceURL=webpack:///./test/main.js?");
+eval("\n\n//# sourceURL=webpack:///./test/main.js?");
 
 /***/ })
 
