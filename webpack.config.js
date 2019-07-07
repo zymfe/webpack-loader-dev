@@ -1,5 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const date = new Date();
 
 module.exports = {
@@ -15,7 +16,11 @@ module.exports = {
   },
   // watch: true,
   plugins: [
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './template.html',
+      filename: 'index.html'
+    })
   ],
   module: {
     rules: [

@@ -86,6 +86,23 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./loaders/css-loader.js!./loaders/less-loader.js!./src/main.less":
+/*!************************************************************************!*\
+  !*** ./loaders/css-loader.js!./loaders/less-loader.js!./src/main.less ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+const list = []
+list.push("body {\n  background-color: #f00;\n}\nbody .logo {\n  margin-bottom: 20px;\n  width: 260px;\n  height: 260px;\n  background-image: ")
+list.push('url('+"https://avatars3.githubusercontent.com/u/25874685?s=460&v=4"+')')
+list.push(";\n}\nbody .container {\n  margin-bottom: 20px;\n  width: 200px;\n  height: 100px;\n  line-height: 100px;\n  text-align: center;\n  background-image: ")
+list.push('url('+"../loader-order-normal.jpg"+')')
+list.push(";\n}\ndiv {\n  font-size: 20px;\n  font-weight: 600;\n  color: blue;\n}\n")
+module.exports = list.join('')
+
+/***/ }),
+
 /***/ "./src/async.png":
 /*!***********************!*\
   !*** ./src/async.png ***!
@@ -151,11 +168,11 @@ __webpack_require__(/*! ./main.less */ "./src/main.less");
   !*** ./src/main.less ***!
   \***********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 
     const styleEle = document.createElement('style');
-    styleEle.innerHTML = "body {\n  background-color: #ff0000;\n}\n";
+    styleEle.innerHTML = __webpack_require__(/*! !../loaders/css-loader.js!../loaders/less-loader.js!./main.less */ "./loaders/css-loader.js!./loaders/less-loader.js!./src/main.less");
     document.head.appendChild(styleEle);
   
 

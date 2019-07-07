@@ -1,3 +1,27 @@
+@bgColor: #f00;
+
 body {
-  background-color: #ff0000;
+  background-color: @bgColor;
+
+  .logo {
+    margin-bottom: 20px;
+    width: 260px;
+    height: 260px;
+    background-image: url("https://avatars3.githubusercontent.com/u/25874685?s=460&v=4");
+  }
+
+  .container {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-image: url("../loader-order-normal.jpg");
+  }
+}
+
+div {
+  font-size: 20px;
+  font-weight: 600;
+  color: blue;
 }
