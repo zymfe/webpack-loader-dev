@@ -2,7 +2,6 @@ const babel = require('@babel/core');
 const loaderUtils = require('loader-utils');
 
 function babelLoader (source) {
-
   const options = loaderUtils.getOptions(this);
   const cb = this.async();
 

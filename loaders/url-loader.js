@@ -6,7 +6,6 @@ const loaderUtils = require('loader-utils');
 const mime = require('mime');
 
 function urlLoader (source) {
-  
   const { limit } = loaderUtils.getOptions(this);
   
   if (!!limit && limit > source.length) {

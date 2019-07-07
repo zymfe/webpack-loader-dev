@@ -2,7 +2,6 @@ const loaderUtils = require('loader-utils');
 const schemaUtils = require('schema-utils');
 
 function bannerLoader (source) {
-
   const options = loaderUtils.getOptions(this);
   const schema = {
     type: 'object',
