@@ -142,6 +142,23 @@ var imgEle = document.createElement('img');
 imgEle.src = _async["default"];
 document.body.appendChild(imgEle);
 
+__webpack_require__(/*! ./main.less */ "./src/main.less");
+
+/***/ }),
+
+/***/ "./src/main.less":
+/*!***********************!*\
+  !*** ./src/main.less ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+    const styleEle = document.createElement('style');
+    styleEle.innerHTML = "body {\n  background-color: #ff0000;\n}\n";
+    document.head.appendChild(styleEle);
+  
+
 /***/ })
 
 /******/ });
