@@ -9,7 +9,7 @@ function cssLoader (source) {
     const [matchedStr, strPath] = res;
     const position = lastIndex - matchedStr.length;
     arr.push(`list.push(${JSON.stringify(source.slice(index, position))})`);
-    if (/^(http|https)/.test(strPath)) {
+    if (!/(http|https):\/\//.test(strPath)) {
       arr.push(`list.push('url('+require(${strPath})+')')`);
     } else {
       arr.push(`list.push('url('+${strPath}+')')`);

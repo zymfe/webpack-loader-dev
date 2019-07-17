@@ -86,18 +86,29 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./loader-order-normal.jpg":
+/*!*********************************!*\
+  !*** ./loader-order-normal.jpg ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "7b22c4b74e2fb78f5367f06bc9d20fc7.jpg"
+
+/***/ }),
+
 /***/ "./loaders/css-loader.js!./loaders/less-loader.js!./src/main.less":
 /*!************************************************************************!*\
   !*** ./loaders/css-loader.js!./loaders/less-loader.js!./src/main.less ***!
   \************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 const list = []
 list.push("body {\n  background-color: #f00;\n}\nbody .logo {\n  margin-bottom: 20px;\n  width: 260px;\n  height: 260px;\n  background-image: ")
 list.push('url('+"https://avatars3.githubusercontent.com/u/25874685?s=460&v=4"+')')
 list.push(";\n}\nbody .container {\n  margin-bottom: 20px;\n  width: 200px;\n  height: 100px;\n  line-height: 100px;\n  text-align: center;\n  background-image: ")
-list.push('url('+"../loader-order-normal.jpg"+')')
+list.push('url('+__webpack_require__(/*! ../loader-order-normal.jpg */ "./loader-order-normal.jpg")+')')
 list.push(";\n}\ndiv {\n  font-size: 20px;\n  font-weight: 600;\n  color: blue;\n}\n")
 module.exports = list.join('')
 
@@ -134,7 +145,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-/* created by zhaoyiming on 2019/7/7 */
+/* created by zhaoyiming on 2019/7/17 */
 var Person =
 /*#__PURE__*/
 function () {
