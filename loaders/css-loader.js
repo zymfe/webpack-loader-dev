@@ -1,4 +1,5 @@
 function cssLoader (source) {
+  console.log('css-loader: ', source)
   const arr = ['const list = []'];
   const reg = /url\((.+?)\)/g;
   let index = 0;
